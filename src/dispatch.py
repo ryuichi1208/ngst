@@ -8,6 +8,7 @@ import functools
 
 from flask import Flask,request,make_response,jsonify
 from module import github_trend
+from module import qiita_trend
 
 app = Flask(__name__)
 
