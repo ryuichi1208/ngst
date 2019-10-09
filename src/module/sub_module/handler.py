@@ -1,6 +1,7 @@
 import sys
 import os
 
+
 class Handler(Tasks):
 
     _listen_port_life = ""
@@ -16,5 +17,5 @@ class Handler(Tasks):
 
     def serialize(self):
         result = super(Handler, self).serialize()
-        result['is_handler'] = True
+        result["is_handler"] = True
         return result

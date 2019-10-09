@@ -3,8 +3,9 @@ import requests
 URLS = [
     "https://github.com/ryuichi1208",
     "https://github.com/ryuichi1208?tab=repositories",
-    "https://githuuaaaaaa.com/"
+    "https://githuuaaaaaa.com/",
 ]
+
 
 def test_requests_func():
     for url in URLS:
@@ -16,5 +17,6 @@ def test_requests_func():
             print("Not Found : ", nf)
         except requests.exceptions.ConnectionError as ce:
             print("Connection Error : ")
+
 
 test_requests_func()

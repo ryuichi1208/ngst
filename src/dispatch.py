@@ -17,13 +17,14 @@ app = Flask(__name__)
 
 def j_threads_create(n_cores: int) -> dict:
     return {
-        "code" : "001",
+        "code": "001",
         "cpu_count": n_cores,
-        "pid" : os.getpid(),
-        "ppid" : os.getppid(),
-        "uid" : os.getuid(),
-        "gid" : os.getgid(),
+        "pid": os.getpid(),
+        "ppid": os.getppid(),
+        "uid": os.getuid(),
+        "gid": os.getgid(),
     }
+
 
 @app.route("/__test")
 def endpoint_for_testing():

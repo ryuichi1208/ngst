@@ -8,10 +8,12 @@ import requests
 import sys
 
 BASE_URL = "https://github.com"
-URL =BASE_URL + "/trending"
+URL = BASE_URL + "/trending"
+
 
 def send_to_slack(trends: list) -> int:
     pass
+
 
 def run():
     r = requests.get(URL).text
@@ -28,6 +30,6 @@ def run():
         print(f"[{i+1}] {repos[1:]} : {BASE_URL + repos}")
         print(f"```\n {desc.strip()} \n```")
 
+
 if __name__ == "__main__":
     run()
-
