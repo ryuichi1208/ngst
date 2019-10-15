@@ -6,7 +6,6 @@ import os
 import pprint
 import requests
 import sys
-
 BASE_URL = "https://github.com"
 URL = BASE_URL + "/trending"
 
